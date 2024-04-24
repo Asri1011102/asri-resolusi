@@ -2,3 +2,4 @@ Asri Resolusi
 -Belajar Javascript
 -Konsisten Belajar tiap hari
 -Belajar Framework
+- Belajar CSS Grid
