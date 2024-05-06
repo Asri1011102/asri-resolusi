@@ -1,4 +1,7 @@
 Asri Resolusi
+-Belajar Javascript
+ *ReactJS
+ *Angular
 -Konsisten Belajar tiap hari
 -Belajar Framework CSS
   *Belajar Tailwind
