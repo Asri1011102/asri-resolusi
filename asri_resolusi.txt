@@ -6,3 +6,4 @@ Asri Resolusi
 -Belajar Framework CSS
   *Belajar Tailwind
 -Belajar PHP
+-Belajar C++
