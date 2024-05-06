@@ -1,6 +1,6 @@
 Asri Resolusi
--Belajar Javascript
 -Konsisten Belajar tiap hari
 -Belajar Framework CSS
   *Belajar Tailwind
 -Belajar PHP
+-Belajar C++
