@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #232946;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.home {
+    height: 100vh;
+}
+
+.home img {
+    display: block;
+    width: 30%;
+}
+.navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+span {
+    color: #eebbc3;
+}
+
+.logo {
+    font-size: 1.7em;
+    color: #fffffe;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu a {
+    color: #fffffe;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu a:hover {
+    color: #eebbc3;
+}
+
+.button-nav {
+    background-color: #eebbc3;
+    color: #232946;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.button-nav:hover {
+    transform: scale(1.1)
+}
+
+/* Home */
+
+.home {
+    color: #fffffe;
+}
+.hello {
+    position: absolute;
+    top: 28%;
+    left:40%;
+    margin-bottom: 5px;
+}
+.content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 60%;
+    font-weight: 200;
+    display: flex;
+    gap: 40px;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 70%;
+    left: 43%;
+}
+
+.sosmed a {
+    color: #fffffe;
+    font-size: 2rem;
+}
+
+.content img {
+    border-radius: 100%;
+}
+.email {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+.email input {
+    padding: 6.5px;
+    width: 300px;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+}
+
+.send {
+    background-color: #eebbc3;
+    color: #232946;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    width: 30%;
+    border: none;
+    position: absolute;
+    top: 13%;
+    left: 70%;
+}
+
+/* Services */
+.services {
+    padding-bottom: 5%;
+}
+
+.submain-service {
+    font-size: 45px;
+    text-align: center;
+    color: #eebbc3;
+}
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fffffe;
+    padding: 40px;
+}
+
+.main-service {
+    box-sizing: border-box;
+    border: 1px solid #eebbc3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.sub-service {
+    color: #eebbc3;
+}
+
+.service button {
+    padding: 5px;
+    border: 1px solid #eebbc3;
+    color: #232946;
+    background-color: #eebbc3;
+    transition: .2s;
+    margin-top: 7px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.service button:hover {
+    background-color: transparent;
+    color: #fffffe;
+}
+
+
+
+/* Galeri */
+
+.galerii {
+    padding-bottom: 5%;
+}
+
+.sub-galeri {
+    text-align: center;
+    color: #eebbc3;
+    font-size: 45px;
+}
+
+.galeri {
+    gap: 10px;
+    margin: 50px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+}
+
+.galeri img {
+    display: block;
+}
+
+/* Contact */
+.contactt {
+    padding-bottom: 5%;
+}
+
+.sub-contact {
+    font-size: 45px;
+    color: #eebbc3;
+    text-align: center;
+}
+
+.contact {
+    margin: 50px;
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'gambar1 datadiri1'
+    'gambar2 datadiri2';
+    color: #fffffe;
+}
+
+.gambar1 {
+    background-image: url(hero/6.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    grid-area: gambar1;
+}
+.gambar2 {
+    background-image: url(hero/3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: gambar2;
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fffffe;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+}
+
+
+/* Meda Query */
+
+@media screen and (max-width: 600px) {
+
+    .navbar .logo {
+        display: none;
+    }
+
+    #service {
+        margin-top: 70px;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+    } 
+
+    .home h1 {
+        transform: translateX(-70px);
+    }
+
+    .sosmed i {
+        font-size: 25px;
+        margin-top: 189px;
+        transform: translateX(-60px);
+    }
+
+    .galeri {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content p {
+        text-align: justify;
+    }
+
+    .email {
+        margin-top: 120px;
+        transform: translateX(-120px);
+    }
+    .email input {
+        border-radius: 5px;
+        width: 250px;
+        transform: translateY(50px);
+    }
+
+    .email .send {
+        border-radius: 5px;
+        margin-top: 50px;
+        transform: translateX(90px);
+    }
+
+    .home .hello {
+        font-size: 20px;
+    }
+    .home p {
+      font-size: 14px;   
+    }
+
+    .home img{
+        width: 150px;
+        height: 150px;
+    }
+
+}

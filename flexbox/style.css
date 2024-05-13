@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #222831;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+/* Container */
+
+.container {
+    margin: 20px;
+}
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+.logo {
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    font-size: .85em;
+    text-decoration: none;
+    color: palevioletred;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* main */
+
+.main {
+    margin: 20px;
+    display: grid;
+    grid-template-areas: 
+    'hero hero main-hero1'
+    'hero hero main-hero2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(gambar/marah2.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+.main-hero1 {
+    grid-area: main-hero1;
+    background-image: url(gambar/marah0.jpg);
+    background-size: cover;
+    background-position: 0 45%;
+}
+
+.main-hero2 {
+    grid-area: main-hero2;
+    background-image: url(gambar/marah1.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+/* Services */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    gap: 10px;
+    margin: 100px 0;
+}
+
+.service {
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+.service i {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
